@@ -69,7 +69,16 @@ document.getElementById("sendBtn").addEventListener("click", sendMessage);
 
 // Handle sendMessage
 function sendMessage() {
-    console.log("sendMessage");
+
+    // recieve the message
+    let message = document.getElementById("userInput").value;
+    console.log(message);
+
+    // wipe the input field
+
+    // add user message to the chat GUI
+
+    // respond with eliza logic 
 }
 
 // Function to reflect responses.
@@ -102,9 +111,3 @@ function respond(userInput) {
     // Default response if no patterns match.
     return "I'm not sure I understand. Can you elaborate?";
 }
-
-// Example usage.
-console.log(respond("I feel happy")); // "Why do you feel happy?"
-console.log(respond("I need some help")); // "Why do you need some help?"
-console.log(respond("hello")); // "Hello! How are you feeling today?"
-console.log(respond("goodbye")); // "Goodbye! Take care."
