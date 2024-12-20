@@ -31,18 +31,18 @@ const responses = {
         "What role does your family play in your thoughts?"
     ],
     "I need(.*)": [
-        "Why do you need $2?",
-        "Would getting $2 really help you?",
-        "What if you didn’t need $2?"
+        "Why do you need $1?",
+        "Would getting $1 really help you?",
+        "What if you didn’t need $1?"
     ],
     "I am(.*)": [
-        "Why do you think you are $2?",
+        "Why do you think you are $1?",
         "How long have you felt that way?",
-        "What made you feel like $2?"
+        "What made you feel like $1?"
     ],
     "I feel(.*)": [
-        "Why do you feel $2?",
-        "Does feeling $2 happen often?",
+        "Why do you feel $1?",
+        "Does feeling $1 happen often?",
         "How does that feeling affect you?"
     ],
     "sorry|apologies": [
