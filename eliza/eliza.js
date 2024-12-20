@@ -64,6 +64,9 @@ const responses = {
     ]
 };
 
+//https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+document.getElementById("sendBtn").addEventListener("click", sendMessage);
+
 // Handle sendMessage
 function sendMessage() {
     console.log("sendMessage");
