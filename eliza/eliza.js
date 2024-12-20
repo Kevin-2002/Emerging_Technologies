@@ -20,6 +20,11 @@ const responses = {
         "Hi there! What’s on your mind?",
         "Hey! How can I help you?"
     ],
+    "how are you|how's it going|what's up": [
+        "I'm just a program, but I'm here to help! How are you?",
+        "I'm doing well, thank you! How can I assist you?",
+        "I'm here and ready to listen. How about you?"
+    ],
     "you remind me of (.*)": [
         "Why do you think I remind you of $1?",
         "What makes you think of $1 when talking to me?",
@@ -44,6 +49,50 @@ const responses = {
         "Why do you feel $1?",
         "Does feeling $1 happen often?",
         "How does that feeling affect you?"
+    ],
+    "I'm not sure|I don't know": [
+        "That’s okay. Can you tell me more about what’s confusing?",
+        "It’s alright to feel unsure. Let’s explore it together.",
+        "What do you think might help you figure it out?"
+    ],
+    "I can't(.*)": [
+        "What makes you think you can’t $1?",
+        "Have you tried $1 before?",
+        "What if you could $1? How would that feel?",
+        "Sometimes it helps to break $1 into smaller steps. Have you tried that?"
+    ],
+    "it hurts|I'm in pain|I'm hurt": [
+        "I’m sorry to hear that. Can you tell me more?",
+        "What kind of pain are you feeling?",
+        "How long have you been feeling this way?",
+        "Is there anything that helps ease the pain?"
+    ],
+    "I'm happy|I'm excited|I feel great": [
+        "That’s wonderful! What’s making you feel this way?",
+        "I’m glad to hear that! Can you share more about it?",
+        "That’s great news! What’s been going well for you?"
+    ],
+    "I'm sad|I'm upset|I'm depressed": [
+        "It’s okay to feel sad sometimes. I’m here to listen.",
+        "What do you think might help you feel better?"
+    ],
+    "I think(.*)": [
+        "Why do you think $1?",
+        "What led you to that thought?",
+        "Do you feel confident about thinking $1?",
+        "How does thinking $1 affect your feelings?"
+    ],
+    "thank you|thanks": [
+        "You’re welcome! I’m glad I could help.",
+        "No problem at all. Let me know if there’s anything else.",
+        "Happy to assist. Take care!",
+        "It’s my pleasure!"
+    ],
+    "life|purpose|meaning": [
+        "What does life mean to you?",
+        "How do you find purpose in life?",
+        "What gives your life meaning?",
+        "Do you often think about life’s bigger questions?"
     ],
     "sorry|apologies": [
         "No need to apologize.",
