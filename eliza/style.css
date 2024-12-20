@@ -1,16 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
 }
 
 .chat-container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: #76aaf3;
 }
 
 .messages {
@@ -31,8 +30,8 @@ body {
 
 .message.user {
     align-self: flex-end;
-    background-color: #0078d7;
-    color: white;
+    background-color: #e5e5e5;
+    color: black;
 }
 
 .message.bot {
@@ -41,10 +40,15 @@ body {
     color: black;
 }
 
+.eliza_logo {
+    height: 300px;
+    width: 450px;
+}
+
 .input-container {
     display: flex;
     padding: 10px;
-    background-color: #fff;
+    background-color: rgb(88, 12, 165);
     border-top: 1px solid #ddd;
 }
 
@@ -68,5 +72,5 @@ body {
 }
 
 .input-container button:hover {
-    background-color: #005a9e;
+    background-color: #025595;
 }
