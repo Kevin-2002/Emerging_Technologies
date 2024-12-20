@@ -25,27 +25,27 @@ const responses = {
         "What makes you think of $1 when talking to me?",
         "Is it a good feeling to be reminded of $1?"
     ],
-    "(.*) mother|father|family|parent(.*)": [
+    "mother|father|family|parent": [
         "Tell me more about your family.",
         "How does that make you feel about your family?",
         "What role does your family play in your thoughts?"
     ],
-    "(.*) I need (.*)": [
+    "I need(.*)": [
         "Why do you need $2?",
         "Would getting $2 really help you?",
         "What if you didn’t need $2?"
     ],
-    "(.*) I am (.*)": [
+    "I am(.*)": [
         "Why do you think you are $2?",
         "How long have you felt that way?",
         "What made you feel like $2?"
     ],
-    "(.*) I feel (.*)": [
+    "I feel(.*)": [
         "Why do you feel $2?",
         "Does feeling $2 happen often?",
         "How does that feeling affect you?"
     ],
-    "(.*) (sorry|apologize)(.*)": [
+    "sorry|apologies": [
         "No need to apologize.",
         "Apologies aren't necessary. Why do you feel that way?",
         "It’s okay to feel that way."
@@ -55,12 +55,9 @@ const responses = {
         "Thank you for sharing. Goodbye!",
         "Bye! I’m here if you need to talk again."
     ],
+    //when nothing matches
     "(.*)": [
-        "Can you tell me more?",
-        "Why do you say that?",
-        "How does that make you feel?",
-        "What do you mean by that?",
-        "Interesting... go on."
+        "I'm not sure I understand. Can you elaborate?"
     ]
 };
 
@@ -95,6 +92,7 @@ function reflect(text) {
 
 // Function to select a suitable response based on the user's input.
 function respond(userInput) {
+    // loop over responses and extract the regex and associated response values
     for (const [pattern, responsesList] of Object.entries(responses)) {
         const regex = new RegExp(pattern, "i");
         const match = userInput.match(regex);
