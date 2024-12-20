@@ -65,20 +65,24 @@ const responses = {
 };
 
 //https://www.w3schools.com/js/js_htmldom_eventlistener.asp
-document.getElementById("sendBtn").addEventListener("click", sendMessage);
+document.getElementById("sendBtn").addEventListener("click", communicate);
 
-// Handle sendMessage
-function sendMessage() {
+// Handle Message / send response
+function communicate() {
 
     // recieve the message
     let message = document.getElementById("userInput").value;
     console.log(message);
 
     // wipe the input field
+    document.getElementById("userInput").value = "";
 
     // add user message to the chat GUI
 
     // respond with eliza logic 
+    let response = respond(message);
+    console.log("response: " + response);
+
 }
 
 // Function to reflect responses.
