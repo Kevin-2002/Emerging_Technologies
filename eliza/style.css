@@ -30,13 +30,13 @@ body {
 
 .message.user {
     align-self: flex-end;
-    background-color: #e5e5e5;
+    background-color: #84bff0;
     color: black;
 }
 
 .message.bot {
     align-self: flex-start;
-    background-color: #e5e5e5;
+    background-color: #a08dd1;
     color: black;
 }
 

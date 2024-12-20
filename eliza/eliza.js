@@ -75,11 +75,22 @@ function communicate() {
     document.getElementById("userInput").value = "";
 
     // add user message to the chat GUI
+    // how to add a class in javascript
+    // https://www.w3schools.com/howto/howto_js_add_class.asp
+    let userMessageBox = document.createElement("div");
+    userMessageBox.classList.add("message.user");
+    userMessageBox.innerHTML = message;
 
     // respond with eliza logic 
     let response = respond(message);
     console.log("response: " + response);
-
+    
+    // add bot message to the chat GUI
+    // how to add a class in javascript
+    // https://www.w3schools.com/howto/howto_js_add_class.asp
+    let botMessageBox = document.createElement("div");
+    botMessageBox.classList.add("message.bot");
+    botMessageBox.innerHTML = response;
 }
 
 // Function to reflect responses.
