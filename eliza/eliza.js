@@ -78,7 +78,8 @@ function communicate() {
     // how to add a class in javascript
     // https://www.w3schools.com/howto/howto_js_add_class.asp
     let userMessageBox = document.createElement("div");
-    userMessageBox.classList.add("message user");
+    userMessageBox.classList.add("message");
+    userMessageBox.classList.add("user");
     userMessageBox.innerHTML = message;
 
     // respond with eliza logic 
@@ -87,7 +88,8 @@ function communicate() {
 
     // add bot message to the chat GUI
     let botMessageBox = document.createElement("div");
-    botMessageBox.classList.add("message bot");
+    botMessageBox.classList.add("message");
+    botMessageBox.classList.add("bot");
     botMessageBox.innerHTML = response;
 
     // get the chat box to add divs to
