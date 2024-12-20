@@ -41,8 +41,9 @@ body {
 }
 
 .eliza_logo {
-    height: 300px;
-    width: 450px;
+    height: 150px;
+    width: 300px;
+    align-self: center;
 }
 
 .input-container {
