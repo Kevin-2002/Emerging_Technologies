@@ -64,6 +64,11 @@ const responses = {
     ]
 };
 
+// Handle sendMessage
+function sendMessage() {
+    console.log("sendMessage");
+}
+
 // Function to reflect responses.
 function reflect(text) {
     return text
